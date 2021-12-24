@@ -43,7 +43,7 @@ public class RequestInterceptor implements HandlerInterceptor,InnerInterceptor {
         String token = request.getHeader("token");
         String requestURI = request.getRequestURI();
         //检查有没有需要用户权限的注解
-        if(requestURI.contains("/books/login")){
+        if(requestURI.contains("/user/login")){
             return true;//放行
         }else if (token == null){
             throw new DefinitionException("无token，请重新登录");

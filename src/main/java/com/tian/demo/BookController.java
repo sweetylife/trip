@@ -1,10 +1,8 @@
-package com.tian.controller;
+package com.tian.demo;
 
 import com.alibaba.fastjson.JSONObject;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.tian.config.interceptor.OSSService;
-import com.tian.domain.Book;
-import com.tian.service.IBookService;
 import com.tian.utils.result.PageInfo;
 import com.tian.utils.result.ResultResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +27,7 @@ import java.io.InputStream;
 //这里如果是除了400或者500以外的异常，直接抛出DefinitionException异常就好
 //如果是400的异常，调用fail
 //如果是成功，调用success
-@RestController
+//@RestController
 @RequestMapping("/books")
 public class BookController {
 

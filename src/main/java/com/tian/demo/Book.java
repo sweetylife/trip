@@ -1,4 +1,4 @@
-package com.tian.domain;
+package com.tian.demo;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
